@@ -10,6 +10,7 @@
 		F79C4B891D92FC8600F63129 /* Euler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79C4B7F1D92FC8600F63129 /* Euler.framework */; };
 		F79C4B8E1D92FC8600F63129 /* EulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79C4B8D1D92FC8600F63129 /* EulerTests.swift */; };
 		F79C4B901D92FC8600F63129 /* Euler.h in Headers */ = {isa = PBXBuildFile; fileRef = F79C4B821D92FC8600F63129 /* Euler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F79C4B9A1D92FC9600F63129 /* Euler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79C4B991D92FC9600F63129 /* Euler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		F79C4B881D92FC8600F63129 /* EulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79C4B8D1D92FC8600F63129 /* EulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulerTests.swift; sourceTree = "<group>"; };
 		F79C4B8F1D92FC8600F63129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F79C4B991D92FC9600F63129 /* Euler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Euler.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		F79C4B811D92FC8600F63129 /* Euler */ = {
 			isa = PBXGroup;
 			children = (
+				F79C4B991D92FC9600F63129 /* Euler.swift */,
 				F79C4B821D92FC8600F63129 /* Euler.h */,
 				F79C4B831D92FC8600F63129 /* Info.plist */,
 			);
@@ -149,6 +152,7 @@
 					F79C4B7E1D92FC8600F63129 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6EFGV8H972;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					F79C4B871D92FC8600F63129 = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79C4B9A1D92FC9600F63129 /* Euler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		F79C4B941D92FC8600F63129 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
@@ -334,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.greybeard.Euler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +348,7 @@
 		F79C4B951D92FC8600F63129 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
@@ -360,6 +368,7 @@
 		F79C4B971D92FC8600F63129 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
 				INFOPLIST_FILE = EulerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +381,7 @@
 		F79C4B981D92FC8600F63129 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
 				INFOPLIST_FILE = EulerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
