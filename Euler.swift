@@ -53,6 +53,7 @@ func factors(listOfPrimes:[Int], numberToFactor:(Int))->[Int] {
     return listOfFactors
 }
 
+
 //Euler prob 6 part 1
 public func squareOfSums(_: [Int])->Int{
     var sum: Int = 0

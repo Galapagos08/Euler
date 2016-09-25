@@ -13,6 +13,7 @@ class EulerTests: XCTestCase {
     
     func testPrimes (){
         
+        
     }
 
 }
